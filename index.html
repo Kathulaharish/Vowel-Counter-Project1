@@ -9,10 +9,31 @@
 <body>
     <div class="box">
         <h4>Vowel Counter</h4>
-        <textarea id="textArea"></textarea>
+        <textarea id="textArea" onkeyup="countVowel(this.value)"></textarea>
         <p>
-            Vowel <span id="vowelCount"></span>
+            Vowel <span id="vowelCount">0</span>
         </p>
+
+
     </div>
+    <script type="text/JavaScript">
+        var vowelCount = document.getElementById("vowelCount");
+        function  countVowel(str){
+            str = str.toLowerCase();
+            let vowArr = ['a', 'e', 'i', 'o', 'u'];
+            let counter = 0;
+
+            for(let letter of str){
+                if(vowArr.includes(letter)){
+                    counter++;
+                    vowelCount.classList.add('blink');
+                }
+                else{
+                    vowelCount.classList.remove('blink');
+                }
+            }
+            vowelCount.innerHTML = counter;
+        } 
+    </script>
 </body>
 </html>
