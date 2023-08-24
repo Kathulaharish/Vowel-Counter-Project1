@@ -39,3 +39,35 @@ body{
     font-size: 1.5rem;
     color: #555;
 }
+<<<<<<< HEAD
+=======
+.box p{
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+    color:#555;
+}
+.box p span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 24px;
+    background: rgb(8, 228, 228);
+    transition: all .5s;
+}
+.box p span.blink{
+    box-shadow: 0px 0px 6px #05c9cb,
+                0px 0px 12px #05a3ab,
+                0px 0px 18px #045e66,
+                0px 0px 24px #e8fc06;
+
+}
+>>>>>>> new
